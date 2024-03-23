@@ -7,5 +7,5 @@ package("Script")
 	add_urls("https://github.com/MorganCaron/Script.git")
 
 	on_install(function(package)
-		import("package.tool.xmake").install(package)
+		import("package.tools.xmake").install(package)
 	end)
