@@ -1,5 +1,5 @@
 package("CppUtils")
-	set_kind("moduleonly")
+	set_kind("library")
 	set_homepage("https://github.com/MorganCaron/CppUtils")
 	set_description("C++ Utilities Library for compilers and various projects")
 	set_license("LGPL3")
