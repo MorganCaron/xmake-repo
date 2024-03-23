@@ -1,4 +1,4 @@
-package("script")
+package("Script")
 	set_kind("moduleonly")
 	set_homepage("https://github.com/MorganCaron/Script")
 	set_description("Script is a multi-paradigm compiled programming language.")

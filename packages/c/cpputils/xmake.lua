@@ -1,4 +1,4 @@
-package("cpputils")
+package("CppUtils")
 	set_kind("moduleonly")
 	set_homepage("https://github.com/MorganCaron/CppUtils")
 	set_description("C++ Utilities Library for compilers and various projects")
