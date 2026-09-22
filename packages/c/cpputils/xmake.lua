@@ -11,6 +11,15 @@ package("CppUtils", function()
 	add_versions("v0.1.0", "dd3c0128bf4a945123c6112a4391dd0a3168bdf96b44c123abc2ed8152f6732e")
 	add_versions("v0.0.1", "1b26d9ae9a8c1a457aeeabc7285f1d101fb8d37dc1a930427310c6e5100676d5")
 
+	if is_plat("macosx") then
+		add_frameworks("CoreServices", "CoreFoundation")
+		add_syslinks("pthread", "dl")
+	elseif is_plat("linux") then
+		add_syslinks("pthread", "dl")
+	elseif is_plat("windows") then
+		add_syslinks("Ws2_32")
+	end
+
 	on_install(function(package)
 		import("package.tools.xmake").install(package)
 	end)
